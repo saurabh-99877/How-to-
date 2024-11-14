@@ -1,0 +1,22 @@
+*{
+   box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    vertical-align: middle;
+    margin-top: 8px;
+}
+
+@media screen and (width >= 450px) {
+ .row {
+    grid-template-columns: repeat(2, 1fr);
+ }
+}
+
+@media screen and (width >= 800px) {
+ .row {
+   grid-template-columns: repeat(4, 1fr);
+ }
+}
+
