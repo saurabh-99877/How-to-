@@ -1,4 +1,4 @@
-const divs = document.querySelectorAll(".tabcontent");
+         const divs = document.querySelectorAll(".tabcontent");
          const parent = document.querySelector(".parent");
         
         const openCity = (city) => {
