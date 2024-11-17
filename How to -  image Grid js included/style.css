@@ -9,7 +9,12 @@ img{
     margin-top: 8px;
 }
 
-@media screen and (width >= 450px) {
+.btn.active{
+   background-color: #666;
+   color: white;
+}
+
+/* @media screen and (width >= 450px) {
  .row {
     grid-template-columns: repeat(2, 1fr);
  }
@@ -19,5 +24,5 @@ img{
  .row {
    grid-template-columns: repeat(4, 1fr);
  }
-}
+} */
 
