@@ -5,7 +5,7 @@ const row = document.querySelector(".row");
 parent.addEventListener("click", (e) => {
   if(e.target.tagName == "BUTTON") { //if(e.target.classList.contains("btn"))
    let num = e.target.innerHTML;
-   if(num === '1') {;
+   if(num === '1') {
     row.style.gridTemplateColumns = "repeat(1, 1fr)";
    }
    else if(num === '2') {
@@ -20,10 +20,8 @@ parent.addEventListener("click", (e) => {
 
 for(let i = 0; i < btn.length; i++) {
   btn[i].addEventListener("click", function(e) {
-    let current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
+    let current = document.querySelector(".active");
+    current.className = current.className.replace("active", "");
     this.className += " active";
-    console.log(current);
-  //  console.log(this);
   })
 }
