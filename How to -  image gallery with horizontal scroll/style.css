@@ -1,0 +1,18 @@
+*{
+   box-sizing: border-box;
+}
+
+img{
+    width: 60%;
+    height: auto;
+    vertical-align: middle;
+    margin-top: 8px;
+    
+}
+
+.btn.active{
+   background-color: #666;
+   color: white;
+}
+
+
