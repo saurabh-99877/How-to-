@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+   
+</head>
+<body class="m-0 font-serif">
+  <div class="py-10 px-6">
+<h2 class= "font-bold text-2xl">Fade in Overlay</h2>
+<p class="mt-2">Hover over the image to see the effect.</p>
+</div>
+
+      <div class="w-1/2 max-w-[400px] relative m-2">
+        <img src="https://th.bing.com/th/id/OIP.7cRYFyLoDEDh4sRtM73vvwHaDg?w=314&h=166&c=7&r=0&o=5&dpr=1.4&pid=1.7" 
+        alt="image"
+        class="w-full h-auto">
+        <div class="border-2 border-red-500 absolute top-0 left-0 bottom-0 right-0 w-full h-full bg-yellow-500 text-white opacity-0 delay-200
+         ease-out hover:opacity-100">
+          <h2 class="font-bold text-xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">John Doe</h2>
+        </div>
+      </div>
+</body>
+</html>
