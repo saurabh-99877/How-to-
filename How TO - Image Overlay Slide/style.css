@@ -1,0 +1,25 @@
+.container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+
+.container1:hover .overlay {
+    height: 100%;
+    top: 0;
+}
+
+.container2:hover .overlay { 
+  width: 100%;
+  right: 0;
+}
+
+.container3:hover .overlay {
+    width: 100%;
+    left: 0;
+}
+
+@media screen and (width >= 450px) {
+    .parent {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
