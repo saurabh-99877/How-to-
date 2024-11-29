@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Video</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="">
+    <h2 class="text-xl font-bold my-2 p-2">Responsive Form</h2>
+    <p class="text-xl p-2">Resize the browser window to see the effect. When the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other.</p>
+
+    <div class="parent bg-[#f2f2f2]">
+    <form action="">
+      <div class="px-4 py-16">
+        <div class="row">
+          <label for="" class="text-xl block">First Name</label>
+          <input type="text" placeholder="Your name.." class="p-2 m-2">
+        </div>
+        <div class="row">
+          <label for="" class="text-xl block">Last Name</label>
+          <input type="text" placeholder="Your last name.." class="p-2 m-2">
+        </div>
+        <div class="row">
+          <label for="" class="text-xl block my-2">Country</label>
+          <select title="country" name="country" id="" class="my-1 w-full basis-[80%] m-2">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+        </div>
+        <div class="row">
+          <label for="" class="text-xl block my-2">Subject</label>
+          <textarea name="subject" id="" placeholder="Write something.."
+           class="text-xl w-full h-[200px] basis-[80%] m-2 p-2"></textarea>
+        </div>
+        <div class="bg-red-500 btn-container">
+          <input type="submit" value="Submit" class="p-2 text-xl text-white w-full">
+        </div>
+      </div>
+    </form>
+    </div>
+</body>
+</html>

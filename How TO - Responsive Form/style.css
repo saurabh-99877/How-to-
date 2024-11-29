@@ -1,0 +1,25 @@
+input {
+    outline: none;
+    border: 2px solid #ccc;
+    width: 100%;
+}
+
+@media screen and (width >= 600px) {
+    .row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    label {
+        flex-basis: 40%
+    }
+
+    input {
+        flex-basis: 80%;
+    }
+   
+     .btn-container { 
+     width: 200px;
+     margin-left: auto;
+   } 
+}
