@@ -1,0 +1,19 @@
+
+.parent {
+    transition: 0.5s;
+}
+.parent.open {
+    width: 150px;
+}
+.parent a {
+    padding: 8px 8px 8px 32px;
+    font-size: 25px;
+    transition: 0.3s;
+}
+.parent a:hover {
+    color: black;
+}
+
+.main {
+    transition: margin-left .5s;
+}
