@@ -1,0 +1,17 @@
+label {
+   display: block;
+   margin-bottom: 6px;   
+}
+
+.invalid:before {
+   content: '❌ ';
+   position: relative;
+   left: -10px;
+}
+
+.valid:before {
+   content: '✅ ';
+   position: relative;
+   left: -10px;
+}
+

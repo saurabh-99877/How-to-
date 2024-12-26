@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js" defer></script>
+</head>
+<body class="">
+  <div class="">
+    <h1 id = 'heading' class="text-xl sm:text-2xl font-bold text-center py-6
+    bg-gradient-to-r from-green-400 via-blue-500 to-purple-600">Password Validation</h1>
+<div class="">
+<form action=""
+ class="max-w-[550px] m-auto px-5 py-4">
+    <label for="usrname" class="sm:text-xl">Username</label>
+    <input
+     type="text"
+     id="usrname"
+     name="usrname"
+     placeholder="Username" 
+     required
+     class="w-full p-2 mb-4 sm:text-xl"
+     >
+
+     <label for="psw" class="sm:text-xl">Password</label>
+     <input
+      type="password"
+      id="psw"
+      name="psw"
+      placeholder="Password"
+      title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+      required
+      class="w-full p-2 mb-4 sm:text-xl"
+      >
+
+      <button type="submit"
+       class="bg-gradient-to-r from-blue-400 via-teal-300 to-green-300 px-4 py-2 text-white font-bold rounded-md 
+       sm:w-full sm:text-xl">Submit</button>
+       
+</form>
+</div>
+  
+<div id="message" class="hidden px-5 py-2 leading-7 md:leading-10 max-w-[550px] m-auto sm:text-xl">
+  <h3>Password must contain the following:</h3>
+  <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+  <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+  <p id="number" class="invalid">A <b>number</b></p>
+  <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+</div>
+</div>
+</body>
+</html>
