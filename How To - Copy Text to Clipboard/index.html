@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="p-4">
+      <p class="text-lg md:text-2xl">
+        Click on the button to copy the text from the text field. Try to paste
+        the text (e.g. ctrl+v) afterwards in a different window, to see the
+        effect.
+    </p>
+        <div class="py-4 flex items-center gap-4">
+        <input type="text" class="border border-black w-[180px] sm:w-[300px] rounded-md px-4 py-1">
+        <div class="relative">
+        <button class="bg-orange-300 px-5 py-2 rounded-md text-white font-bold relative transition-all duration-1000"
+        onclick="copyText(event)" onmouseover="mouseEnter()" onmouseout="mouseOut()">
+            <div class="tooltip parent hidden">
+            <span class=" absolute -top-[30%] left-8 border-[7px] border-t-[red] border-r-transparent border-b-transparent border-l-transparent"></span>
+            <span id="tooltiptext" class="absolute bottom-[130%] -left-[50%] bg-blue-300 px-4 py-1 text-black whitespace-nowrap ">Copy to clipboard</span>
+        </div>
+            Copy
+        </button>
+    </div>
+       </div>
+       
+    </div>
+  </body>
+</html>
