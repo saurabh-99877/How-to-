@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="p-4 relative h-screen text-[#C2A878] bg-[#355834] md:text-2xl">
+      <h1 class="font-bold text-2xl mb-4">Fullscreen Search</h1>
+      <p>Click on the button to open the search box.</p>
+      <button class="open my-4 bg-[#6E633D] px-3 py-2 text-white text-lg"
+      onclick="openSearch()">
+        Open Search Box
+      </button>
+
+      <div
+        class="hidden parent bg-[#191919]/95 w-full h-screen absolute top-0 left-0 text-white flex items-center justify-center"
+      >
+        <div class="w-[95%] bg-[#1e2939] px-3 py-2 sm:p-3 absolute top-40 sm:max-w-lg md:max-w-2xl">
+          <button type="" class=" p-1 md:text-xl">
+            <i class="fa fa-search"></i>
+          </button>
+          <input type="text" class="w-[90%] px-2 py-1 md:px-4 py-2 bg-[#1e2939] outline-none"
+          placeholder="Search..."/>
+           </div>
+           <span
+            class="close absolute top-5 right-6 text-xl md:text-3xl cursor-pointer"
+            onclick="closeSearch()">X</span
+      </div>
+    </div>
+  </body>
+</html>
